@@ -4,6 +4,7 @@ using Blog.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Blog.Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230219173616_mapping_prop_title")]
+    partial class mapping_prop_title
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -59,7 +62,8 @@ namespace Blog.Data.Migrations
 
                     b.Property<string>("Title")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(150)
+                        .HasColumnType("nvarchar(150)");
 
                     b.Property<int>("ViewCount")
                         .HasColumnType("int");
@@ -74,32 +78,6 @@ namespace Blog.Data.Migrations
                     b.HasIndex("ImageId");
 
                     b.ToTable("Articles");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = new Guid("d18a1bcb-321d-4260-90bb-e39ea753b848"),
-                            CategoryId = new Guid("94aafae7-cf2e-40c3-985d-c6755e6ddcdf"),
-                            Content = "Asp.net Core is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
-                            CreatedBy = "Admin test",
-                            CreatedDate = new DateTime(2023, 2, 19, 21, 15, 37, 53, DateTimeKind.Local).AddTicks(8459),
-                            ImageId = new Guid("984f6e20-56ae-40bd-9983-b72e587117d9"),
-                            Title = "Asp.net Core Deneme Makalesi 1",
-                            ViewCount = 15,
-                            isDeleted = false
-                        },
-                        new
-                        {
-                            Id = new Guid("10c0465a-9541-4845-8594-54813cb0e11e"),
-                            CategoryId = new Guid("12976718-de50-4fc8-803b-de0c49d8a3cf"),
-                            Content = "VS is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
-                            CreatedBy = "Admin test",
-                            CreatedDate = new DateTime(2023, 2, 19, 21, 15, 37, 53, DateTimeKind.Local).AddTicks(8481),
-                            ImageId = new Guid("d357a9a6-ac4b-4722-9e0f-c59b91a14547"),
-                            Title = "VS Deneme Makalesi 1",
-                            ViewCount = 15,
-                            isDeleted = false
-                        });
                 });
 
             modelBuilder.Entity("Blog.Entity.Entities.Category", b =>
@@ -137,24 +115,6 @@ namespace Blog.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Categories");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = new Guid("94aafae7-cf2e-40c3-985d-c6755e6ddcdf"),
-                            CreatedBy = "Admin Test",
-                            CreatedDate = new DateTime(2023, 2, 19, 21, 15, 37, 53, DateTimeKind.Local).AddTicks(8737),
-                            Name = "Asp.net Core",
-                            isDeleted = false
-                        },
-                        new
-                        {
-                            Id = new Guid("12976718-de50-4fc8-803b-de0c49d8a3cf"),
-                            CreatedBy = "Admin Test",
-                            CreatedDate = new DateTime(2023, 2, 19, 21, 15, 37, 53, DateTimeKind.Local).AddTicks(8741),
-                            Name = "Visual Studio",
-                            isDeleted = false
-                        });
                 });
 
             modelBuilder.Entity("Blog.Entity.Entities.Image", b =>
@@ -196,26 +156,6 @@ namespace Blog.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Images");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = new Guid("984f6e20-56ae-40bd-9983-b72e587117d9"),
-                            CreatedBy = "Admin Test",
-                            CreatedDate = new DateTime(2023, 2, 19, 21, 15, 37, 53, DateTimeKind.Local).AddTicks(8868),
-                            FileName = "images/testimage",
-                            FileType = "jpg",
-                            isDeleted = false
-                        },
-                        new
-                        {
-                            Id = new Guid("d357a9a6-ac4b-4722-9e0f-c59b91a14547"),
-                            CreatedBy = "Admin Test",
-                            CreatedDate = new DateTime(2023, 2, 19, 21, 15, 37, 53, DateTimeKind.Local).AddTicks(8872),
-                            FileName = "images/testimage",
-                            FileType = "png",
-                            isDeleted = false
-                        });
                 });
 
             modelBuilder.Entity("Blog.Entity.Entities.Article", b =>
