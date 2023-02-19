@@ -15,7 +15,7 @@ namespace Blog.Entity.Entities
 
 		public Category Category { get; set; }
 
-		public Guid imageId { get; set; }
+		public Guid ImageId { get; set; }
 
 		public Image Image { get; set; }
 

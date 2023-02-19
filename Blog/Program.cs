@@ -1,8 +1,13 @@
+using Blog.Data.Context;
+using Microsoft.EntityFrameworkCore;
+//burayý eklemek yeterli oldu zaten context de ef core u çaðýrýyor.
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddDbContext<AppDbContext>(opt=>opt.UseSqlServer(builder.Configuration.GetConnectionString(
+	"DefaultConnection")));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
