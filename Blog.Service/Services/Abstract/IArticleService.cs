@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Blog.Entity.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,6 @@ namespace Blog.Service.Services.Abstract
 {
 	public interface IArticleService
 	{
-
+		Task<List<Article>> GetAllArticlesAsync();
 	}
 }
