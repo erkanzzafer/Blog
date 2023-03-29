@@ -109,8 +109,6 @@ C:\Users\PC\source\repos\Blog\Blog\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Co
 C:\Users\PC\source\repos\Blog\Blog\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Connections.Abstractions.dll
 C:\Users\PC\source\repos\Blog\Blog\bin\Debug\net6.0\refs\Microsoft.AspNetCore.CookiePolicy.dll
 C:\Users\PC\source\repos\Blog\Blog\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Cors.dll
-C:\Users\PC\source\repos\Blog\Blog\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Cryptography.Internal.dll
-C:\Users\PC\source\repos\Blog\Blog\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\PC\source\repos\Blog\Blog\bin\Debug\net6.0\refs\Microsoft.AspNetCore.DataProtection.Abstractions.dll
 C:\Users\PC\source\repos\Blog\Blog\bin\Debug\net6.0\refs\Microsoft.AspNetCore.DataProtection.dll
 C:\Users\PC\source\repos\Blog\Blog\bin\Debug\net6.0\refs\Microsoft.AspNetCore.DataProtection.Extensions.dll
@@ -195,8 +193,6 @@ C:\Users\PC\source\repos\Blog\Blog\bin\Debug\net6.0\refs\Microsoft.Extensions.Fi
 C:\Users\PC\source\repos\Blog\Blog\bin\Debug\net6.0\refs\Microsoft.Extensions.Hosting.Abstractions.dll
 C:\Users\PC\source\repos\Blog\Blog\bin\Debug\net6.0\refs\Microsoft.Extensions.Hosting.dll
 C:\Users\PC\source\repos\Blog\Blog\bin\Debug\net6.0\refs\Microsoft.Extensions.Http.dll
-C:\Users\PC\source\repos\Blog\Blog\bin\Debug\net6.0\refs\Microsoft.Extensions.Identity.Core.dll
-C:\Users\PC\source\repos\Blog\Blog\bin\Debug\net6.0\refs\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\PC\source\repos\Blog\Blog\bin\Debug\net6.0\refs\Microsoft.Extensions.Localization.Abstractions.dll
 C:\Users\PC\source\repos\Blog\Blog\bin\Debug\net6.0\refs\Microsoft.Extensions.Localization.dll
 C:\Users\PC\source\repos\Blog\Blog\bin\Debug\net6.0\refs\Microsoft.Extensions.Logging.Configuration.dll
@@ -405,3 +401,8 @@ C:\Users\PC\source\repos\Blog\Blog\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalys
 C:\Users\PC\source\repos\Blog\Blog\obj\Debug\net6.0\Blog.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\PC\source\repos\Blog\Blog\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\PC\source\repos\Blog\Blog\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\PC\source\repos\Blog\Blog\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\PC\source\repos\Blog\Blog\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\PC\source\repos\Blog\Blog\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\PC\source\repos\Blog\Blog\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\PC\source\repos\Blog\Blog\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll

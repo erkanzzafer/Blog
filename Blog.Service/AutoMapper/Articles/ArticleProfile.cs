@@ -15,7 +15,6 @@ namespace Blog.Service.AutoMapper.Articles
         {
             CreateMap<ArticleDto,Article>().ReverseMap();
 
-
         }
     }
 }
