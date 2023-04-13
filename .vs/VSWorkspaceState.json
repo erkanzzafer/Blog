@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Blog",
+    "\\Blog\\Areas",
+    "\\Blog\\Areas\\Admin",
+    "\\Blog\\Areas\\Admin\\Controllers",
+    "\\Blog\\Areas\\Admin\\Views",
+    "\\Blog\\Areas\\Admin\\Views\\Home",
+    "\\Blog\\Areas\\Admin\\Views\\Shared"
+  ],
+  "SelectedNode": "\\Blog\\Areas\\Admin\\Controllers\\HomeController.cs",
+  "PreviewInSolutionExplorer": false
+}

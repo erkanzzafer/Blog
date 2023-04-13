@@ -3724,11 +3724,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC\\source\\repos\\Blog\\Blog.Data\\Blog.Data.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\Documents\\GitHub\\Blog\\Blog.Data\\Blog.Data.csproj",
       "projectName": "Blog.Data",
-      "projectPath": "C:\\Users\\PC\\source\\repos\\Blog\\Blog.Data\\Blog.Data.csproj",
+      "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\Blog\\Blog.Data\\Blog.Data.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC\\source\\repos\\Blog\\Blog.Data\\obj\\",
+      "outputPath": "C:\\Users\\PC\\Documents\\GitHub\\Blog\\Blog.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3745,8 +3745,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\PC\\source\\repos\\Blog\\Blog.Entity\\Blog.Entity.csproj": {
-              "projectPath": "C:\\Users\\PC\\source\\repos\\Blog\\Blog.Entity\\Blog.Entity.csproj"
+            "C:\\Users\\PC\\Documents\\GitHub\\Blog\\Blog.Entity\\Blog.Entity.csproj": {
+              "projectPath": "C:\\Users\\PC\\Documents\\GitHub\\Blog\\Blog.Entity\\Blog.Entity.csproj"
             }
           }
         }
